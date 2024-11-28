@@ -1,0 +1,128 @@
+/* Header */
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.header-nav {
+  width: 715px;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav-item {
+  display: block;
+}
+
+.header-nav-link {
+  color: var(--c-primary);
+  transition: ease-in-out .3s;
+}
+
+.header-nav-link:hover {
+  color: var(--c-yellow);
+}
+
+.header-info {
+  background: url(/images/header-bg.png) no-repeat right center;
+  background-size: contain;
+}
+
+.header-info-wrapper {
+  max-width: 580px;
+}
+
+.header-info-title-wrapper {
+  position: relative;
+}
+
+.header-info-title-label {
+  position: absolute;
+  top: 89px;
+  left: 385px;
+}
+
+.header-info-title {
+  font-size: var(--fz-extra-large);
+  font-weight: var(--fw-black);
+  text-transform: uppercase;
+  line-height: 104px;
+  margin-bottom: 25px;
+}
+
+.header-info-title-span {
+  font-weight: var(--fw-black);
+  font-size: var(--fz-large);
+  line-height: 96px;
+}
+
+.header-info-text {
+  display: block;
+  max-width: 426px;
+  font-size: var(--fz-middle);
+  font-weight: var(--fw-semibold);
+  line-height: 30px;
+  padding: 10px 27px 14px;
+  background: var(--c-red);
+  border-radius: 8px;
+  margin-bottom: 38px;
+}
+
+.header-info-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-info-link {
+  width: 175px;
+  height: 40px;
+  color: var(--c-primary);
+  font-size: var(--fz-secondary);
+  padding: 5px 0px 6px 45px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  background-color: var(--c-bg-grey);
+  background-repeat: no-repeat; 
+  background-position: 9px center; 
+  border-radius: 9px; 
+  transition: ease-in-out .3s;  
+}
+
+.header-info-link:hover {
+  background-color: var(--c-bg-grey-light);
+}
+
+.frontend {
+  background-image: url(/images/courses-logos/frontend.svg);
+}
+
+.python {
+  background-image: url(/images/courses-logos/python.svg);
+}
+
+.manual {
+  background-image: url(/images/courses-logos/qa.svg);
+}
+
+.full-stack {
+  background-image: url(/images/courses-logos/full-stack.svg);
+}
+
+.c-net {
+  background-image: url(/images/courses-logos/c_sharp.svg);
+}
+
+.java {
+  background-image: url(/images/courses-logos/java.svg);
+}

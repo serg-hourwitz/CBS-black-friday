@@ -13,12 +13,13 @@
   --fz-middle: 24px;
   --fz-big: 42px;
   --fz-extra-large: 116px;
+  --fz-large: 106px;
 
   /* Colors */
 
   --c-primary: #FFFFFF;
   --c-yellow: #FFE251;
-  --c-red: #E50103;
+  --c-red: rgba(229, 1, 3, 1);
   --c-red-light: #F03131;
   --c-grey: #8394B0;
   --c-bg-grey: rgba(255, 255, 255, 0.2);

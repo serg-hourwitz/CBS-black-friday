@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Black Friday</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/variables.css">
-  <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/local.css">
-</head>
-<body>
-  <div class="app">
-    <!-- Header -->
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Friday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/local.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
 
-    
-  </div>
-</body>
+      <header class="header">
+        <div class="header-wrapper container">
+          <!-- logo -->
+          <div class="header-logo">
+            <img src="./images/logo.png" alt="logo" />
+          </div>
+          <!-- nav -->
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="#advantages" class="header-nav-link"
+                  >Переваги роботи в IT</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a href="#specialities" class="header-nav-link"
+                  >IT спеціальності</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a href="#advise" class="header-nav-link"
+                  >Отримати консультацію</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a href="#contacts" class="header-nav-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- title -->
+        <div class="header-info container">
+          <div class="header-info-wrapper">
+            <div class="header-info-title-wrapper">
+              <h1 class="header-info-title">
+                Black <span class="header-info-title-span">Friday</span>
+              </h1>
+              <div class="header-info-title-label">
+                <img src="./images/action-label.png" alt="label" />
+              </div>
+            </div>
+            <p class="header-info-text">
+              Тиждень великих знижок на <br />
+              курси з топових IT професій
+            </p>
+            <div class="header-info-links-wrapper">
+              <a href="#" class="header-info-link frontend">FrontEnd</a>
+              <a href="#" class="header-info-link python">Python</a>
+              <a href="#" class="header-info-link manual">QA Manual</a>
+              <a href="#" class="header-info-link full-stack">Full Stack </a>
+              <a href="#" class="header-info-link c-net">C#/.NET </a>
+              <a href="#" class="header-info-link" style="visibility: hidden;"></a>
+              <a href="#" class="header-info-link java">Java </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>
