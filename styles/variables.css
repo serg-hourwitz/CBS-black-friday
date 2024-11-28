@@ -1,0 +1,28 @@
+:root {
+  /* Fonts */
+
+  --f-primary: "Montserrat";
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-black: 900;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fz-small: 12px;
+  --fz-primary: 16px;
+  --fz-secondary: 20px;
+  --fz-middle: 24px;
+  --fz-big: 42px;
+  --fz-extra-large: 116px;
+
+  /* Colors */
+
+  --c-primary: #FFFFFF;
+  --c-yellow: #FFE251;
+  --c-red: #E50103;
+  --c-red-light: #F03131;
+  --c-grey: #8394B0;
+  --c-bg-grey: rgba(255, 255, 255, 0.2);
+  --c-bg-grey-dark: rgba(255, 255, 255, 0.1);
+  --c-bg-grey-light: rgba(56, 81, 121, 1);
+
+}
