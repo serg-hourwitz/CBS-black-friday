@@ -95,6 +95,7 @@
   background-color: var(--c-bg-grey);
   background-repeat: no-repeat; 
   background-position: 9px center; 
+  backdrop-filter: blur(12.098480224609375px);
   border-radius: 9px; 
   transition: ease-in-out .3s;  
 }
