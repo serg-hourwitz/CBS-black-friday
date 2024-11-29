@@ -36,6 +36,7 @@
 .header-info {
   background: url(/images/header-bg.png) no-repeat right center;
   background-size: contain;
+  margin-bottom: 170px;
 }
 
 .header-info-wrapper {
@@ -101,7 +102,7 @@
 }
 
 .header-info-link:hover {
-  background-color: var(--c-bg-grey-light);
+  background-color: var(--c-grey);
 }
 
 .frontend {
@@ -126,4 +127,12 @@
 
 .java {
   background-image: url(/images/courses-logos/java.svg);
+}
+
+/* Main */
+
+.main-advantages-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
