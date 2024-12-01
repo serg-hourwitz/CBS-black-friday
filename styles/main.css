@@ -23,15 +23,21 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
   margin: 0;
 }
 
+h5 {
+  font-size: var(--fz-secondary);
+  font-weight: var(--fw-bold);
+  margin-bottom: 30px;
+}
 a {
   text-decoration: none;
 }
 
-section {
+.main section:not(:last-of-type) {
   margin-bottom: 170px;
 }
 
@@ -46,4 +52,8 @@ button {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+svg {
+  font-size: var(--fz-svg);
 }
