@@ -312,7 +312,7 @@
 .main-consult {
   background-image: url(/images/black-friday-strips/yellow_strip.png), url(/images/black-friday-strips/red-strip.png), url(/images/advisor.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: bottom, bottom, 79% 30%;
+  background-position: bottom, bottom, 67% 23%;
 }
 
 .main-consult-wrapper {
@@ -382,7 +382,10 @@ select {
 /* Footer */
 
 .footer {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 50px 0 50px;
+  background: var(--c-footer-bg);
 }
 
 .footer-contact-wrapper {
