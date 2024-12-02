@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Black Friday</title>
-    <link rel="icon" type="image/x-icon" href="/images/calendar_3630214.ico">
+    <link rel="icon" type="image/x-icon" href="/images/calendar_3630214.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -405,12 +405,44 @@
                 Отримай
                 <span class="section-title-span">безкоштовну</span> консультацію
               </h2>
-              <form action="" class="main-consult-form">
-                <input type="text" placeholder="Ім'я" />
-                <select name="" id="">
-                  <option value="ukr">+380</option>
-                </select>
-                <button type="button" class="main-consult-btn">
+              <!-- form -->
+              <form action="#" method="get" class="main-consult-form">
+                <input
+                  class="name"
+                  type="text"
+                  placeholder="Ім'я"
+                  name="name"
+                  id="name"
+                  required
+                  pattern="^[a-zA-Zа-яА-ЯіїІЇєЄґҐ'\- ]{2,50}$"
+                  title="Name should be 2-50 characters long and may include letters, hyphens, apostrophes, and spaces."
+                />
+
+                <div class="phone-input-wrapper">
+                  <div class="custom-select">
+                    <select name="phone" id="phone-select">
+                      <option value="ukr" data-flag="/images/flags/flag-ukraine.svg">
+                        +380
+                      </option>
+                      <option value="usa" data-flag="/images/flags/flag-usa.svg">
+                        +1
+                      </option>
+                      <option value="pol" data-flag="/images/flags/flag-poland.svg">
+                        +48
+                      </option>
+                    </select>
+                  </div>
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    pattern="^\d{6,10}(-\d{1,4})?$"
+                    title="Phone number should contain 6-10 digits, optionally separated by dashes."
+                    required
+                  />
+                </div>
+
+                <button type="submit" class="main-consult-btn">
                   Отримати консультацію
                 </button>
               </form>
@@ -418,6 +450,54 @@
           </section>
         </div>
       </main>
+
+      <!-- Modal -->
+      <div class="modal-wrapper">
+        <div class="modal">
+          <span class="modal-close-btn" id="modal-close-btn">&times;</span>
+          <form action="" class="modal-form">
+            <input
+              class="modal-form-name"
+              type="text"
+              placeholder="Ім'я"
+              name="name"
+              id="modal-form-"
+              required
+              pattern="^[a-zA-Zа-яА-ЯіїІЇєЄґҐ'\- ]{2,50}$"
+              title="Name should be 2-50 characters long and may include letters, hyphens, apostrophes, and spaces."
+            />
+
+            <div class="phone-input-wrapper">
+              <div class="custom-select">
+                <select name="phone" id="modal-form-phone-select">
+                  <option value="ukr" data-flag="/images/flags/flag-ukraine.svg">
+                    +380
+                  </option>
+                  <option value="usa" data-flag="/images/flags/flag-usa.svg">
+                    +1
+                  </option>
+                  <option value="pol" data-flag="/images/flags/flag-poland.svg">
+                    +48
+                  </option>
+                </select>
+              </div>
+              <input
+                type="tel"
+                name="phone-number"
+                id="modal-form-phone-number"
+                class="modal-form-phone-number"
+                pattern="^\d{6,10}(-\d{1,4})?$"
+                title="Phone number should contain 6-10 digits, optionally separated by dashes."
+                required
+              />
+            </div>
+
+            <button type="submit" class="modal-form-btn">
+              Отримати консультацію
+            </button>
+          </form>
+        </div>
+      </div>
 
       <!-- Footer -->
       <footer class="footer" id="contacts">
@@ -460,7 +540,11 @@
               </div>
               <!-- support -->
               <div class="footer-contact-item support">
-                <a href="//t.me/cbs_support" class="footer-contact-link" target="_blank">
+                <a
+                  href="//t.me/cbs_support"
+                  class="footer-contact-link"
+                  target="_blank"
+                >
                   <svg class="icon icon-la_telegram">
                     <use xlink:href="#icon-la_telegram"></use>
                   </svg>
@@ -488,19 +572,35 @@
                   <svg class="icon icon-instagram">
                     <use xlink:href="#icon-instagram"></use></svg
                 ></a>
-                <a href="https://www.facebook.com/CBSystematics/" class="footer-contacts-socials-link" target="_blank">
+                <a
+                  href="https://www.facebook.com/CBSystematics/"
+                  class="footer-contacts-socials-link"
+                  target="_blank"
+                >
                   <svg class="icon icon-facebook">
                     <use xlink:href="#icon-facebook"></use></svg
                 ></a>
-                <a href="https://www.youtube.com/user/CBSystematicsTV" class="footer-contacts-socials-link" target="_blank">
+                <a
+                  href="https://www.youtube.com/user/CBSystematicsTV"
+                  class="footer-contacts-socials-link"
+                  target="_blank"
+                >
                   <svg class="icon icon-youtube">
                     <use xlink:href="#icon-youtube"></use></svg
                 ></a>
-                <a href="https://www.linkedin.com/company/cbsystematics-development/" class="footer-contacts-socials-link" target="_blank">
+                <a
+                  href="https://www.linkedin.com/company/cbsystematics-development/"
+                  class="footer-contacts-socials-link"
+                  target="_blank"
+                >
                   <svg class="icon icon-linkedin">
                     <use xlink:href="#icon-linkedin"></use></svg
                 ></a>
-                <a href="https://t.me/cbs_info" class="footer-contacts-socials-link" target="_blank">
+                <a
+                  href="https://t.me/cbs_info"
+                  class="footer-contacts-socials-link"
+                  target="_blank"
+                >
                   <svg class="icon icon-telegram">
                     <use xlink:href="#icon-telegram"></use></svg
                 ></a>
@@ -509,11 +609,12 @@
           </div>
         </div>
       </footer>
-      <div class="arrow-up">
+      <div id="arrow-up">
         <a href="#" class="arrow-up-link">
           <img src="/images/arrow-up.svg" alt="arrow-up"
         /></a>
       </div>
     </div>
+    <script src="/main.js"></script>
   </body>
 </html>

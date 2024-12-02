@@ -33,8 +33,13 @@ h5 {
   font-weight: var(--fw-bold);
   margin-bottom: 30px;
 }
+
 a {
   text-decoration: none;
+}
+
+input {
+  width: 100%;
 }
 
 .main section:not(:last-of-type) {

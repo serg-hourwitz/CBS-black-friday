@@ -333,8 +333,10 @@
   color: var(--c-yellow);
 }
 
+/* form */
+
 .main-consult-form {
-  width: 415px;
+  max-width: 415px;
   display: flex;
   gap: 15px;
   flex-direction: column;
@@ -351,6 +353,8 @@ select {
 input {
   outline: none;
   padding: 22px 0 22px 27px;
+  font-size: var(--fz-middle);
+  color: var(--c-grey);
 }
 
 select {
@@ -363,10 +367,44 @@ select {
   color: var(--c-grey);
 }
 
-select {
-  background-image: url(/images/flag-ukraine.svg);
+/* Wrapper for styling */
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Custom select styling */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  appearance: none;
+  /* Remove default browser styles */
+  background-color: var(--c-bg-grey);
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding: 22px 40px 22px 60px;
+  font-size: var(--fz-middle);
+  cursor: pointer;
+  outline: none;
+  width: 160px;
+  /* Adjust width as needed */
   background-repeat: no-repeat;
-  background-position: 30px center;
+  background-position: 10px center, calc(100% - 104px) center;
+  background-size: 30px auto, 10px;
+  background-image: url(/images/flags/flag-ukraine.svg), url(/images/arrow-select.png);
+}
+
+/* Style input for the phone number */
+#phone-number {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 22px 10px;
+  font-size: 16px;
+  flex: 1;
+  /* Allow input to grow */
+  font-size: var(--fz-middle);
 }
 
 .main-consult-btn {
@@ -377,6 +415,77 @@ select {
   line-height: 33px;
   padding: 18px 0 18px;
   background: none;
+}
+
+/* Modal */
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  /* Hidden by default */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 40px;
+  color: var(--c-primary);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.modal {
+  position: relative;
+  width: 564px;
+  display: flex;
+  justify-content: center;
+  padding: 82px 0 68px;
+  background-color: var(--c-modal-bg);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-form-phone-number {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.modal-form-btn {
+  border-radius: 1000px;
+  color: var(--c-primary);
+  font-size: var(--fz-middle);
+  font-weight: var(--fw-semibold);
+  line-height: 33px;
+  padding: 18px 0 18px;
+  background: none;
+  transition: ease-in-out .3s;
+}
+
+.modal-form-btn:hover {
+  background-color: var(--c-red);
 }
 
 /* Footer */
@@ -418,7 +527,8 @@ select {
   transition: ease-in-out .3s;
 }
 
-.footer-contact-link:hover, .footer-contacts-socials-link:hover {
+.footer-contact-link:hover,
+.footer-contacts-socials-link:hover {
   color: var(--c-yellow);
 }
 
@@ -438,14 +548,11 @@ select {
 }
 
 /* arrow-up */
-.arrow-up {
+#arrow-up {
+  position: sticky;
   width: 64px;
   height: 64px;
-  margin-left: auto;
-  opacity: 0;
+  bottom: 40px;
+  left: 90%;
   transition: ease-in-out .3s;
-}
-
-.arrow-up:hover {
-  opacity: 1;
 }
