@@ -9,7 +9,7 @@ const openModal = () => {
   modal.classList.add('active');
 };
 
-detailsButton.forEach(button => {
+detailsButton.forEach((button) => {
   button.addEventListener('click', openModal);
 });
 
@@ -46,16 +46,13 @@ arrowUp.addEventListener('mouseout', () => {
 });
 
 /* Custom select bgd */
-document.getElementById('phone-select').addEventListener('change', function () {
-  const selectedOption = this.options[this.selectedIndex];
-  const flagUrl = selectedOption.getAttribute('data-flag');
-  this.style.backgroundImage = `url(${flagUrl}), url(/images/arrow-select.png)`;
-});
 
-document
-  .getElementById('modal-form-phone-select')
-  .addEventListener('change', function () {
+const phoneSelect = document.querySelectorAll('.phone-select');
+
+phoneSelect.forEach((select) => {
+  select.addEventListener('change', function () {
     const selectedOption = this.options[this.selectedIndex];
     const flagUrl = selectedOption.getAttribute('data-flag');
     this.style.backgroundImage = `url(${flagUrl}), url(/images/arrow-select.png)`;
   });
+});

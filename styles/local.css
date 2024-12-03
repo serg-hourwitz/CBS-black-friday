@@ -9,7 +9,8 @@
 }
 
 .header-nav {
-  width: 715px;
+  max-width: 715px;
+  width: 100%;
 }
 
 .header-nav-list {
@@ -180,6 +181,7 @@
 
 .section-title {
   text-align: center;
+  text-transform: uppercase;
   font-size: var(--fz-extra-big);
   font-weight: var(--fw-black);
   margin-bottom: 70px;
@@ -293,7 +295,6 @@
 }
 
 .details-btn {
-  display: block;
   color: var(--c-primary);
   font-size: var(--fz-secondary);
   font-weight: var(--fw-med);
@@ -323,10 +324,6 @@
   text-align: start;
   line-height: 63px;
   margin-bottom: 60px;
-}
-
-.section-title {
-  text-transform: uppercase;
 }
 
 .section-title-span {
@@ -455,10 +452,10 @@ select {
 
 .modal {
   position: relative;
-  width: 564px;
+  max-width: 564px;
   display: flex;
   justify-content: center;
-  padding: 82px 0 68px;
+  padding: 82px 75px 68px 75px;
   background-color: var(--c-modal-bg);
 }
 
@@ -555,4 +552,85 @@ select {
   bottom: 40px;
   left: 90%;
   transition: ease-in-out .3s;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .main-advantages-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .main-specialties-cards-wrapper {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .main-specialties-card {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column;
+  }
+
+  .header-logo {
+    margin-bottom: 30px;
+  }
+
+  .header-nav-list {
+    gap: 20px;
+  }
+
+  .footer-contact-wrapper>div:last-of-type {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .footer-contacts-socials-wrapper {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 576px) {
+
+
+  .header-nav-item {
+    text-align: center;
+  }
+
+  .header-info-title-label {
+    transform: scale(.7);
+    top: 6px;
+    left: 263px;
+  }
+
+  .section-title {
+    font-size: var(--fz-big);
+  }
+
+  .header-info-link:nth-of-type(6) {
+    display: none;
+  }
+
+  .footer-contact-wrapper {
+    gap: 30px;
+  }
+
+  .footer-contact-wrapper>div:last-of-type {
+    width: 300px;
+    margin-top: 0;
+  }
+
+  .footer-contacts-socials-wrapper {
+    justify-content: space-between;
+  }
+
+  .footer-contact-wrapper>div:first-of-type {
+    order: 1;
+  }
 }
