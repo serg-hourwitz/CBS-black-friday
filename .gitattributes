@@ -1,0 +1,2 @@
+# Normalize text files to use LF in the repository and CRLF in working copy (Windows)
+*.svg text eol=lf
