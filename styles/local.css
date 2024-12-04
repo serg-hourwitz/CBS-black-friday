@@ -583,9 +583,7 @@ select {
   .main-specialties-card {
     margin-bottom: 0;
   }
-}
 
-@media (max-width: 768px) {
   .header-wrapper {
     flex-direction: column;
   }
@@ -601,7 +599,9 @@ select {
   .header-nav-item {
     text-align: center;
   }
+}
 
+@media (max-width: 768px) {
   .header-info {
     margin-bottom: 50px;
     background: none;
