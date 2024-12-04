@@ -36,7 +36,7 @@
 }
 
 .header-info {
-  background: url(/images/header-bg.png) no-repeat right center;
+  background: url(./images/header-bg.png) no-repeat right center;
   background-size: contain;
   margin-bottom: 170px;
 }
@@ -108,27 +108,27 @@
 }
 
 .frontend {
-  background-image: url(/images/courses-logos/frontend.svg);
+  background-image: url(./images/courses-logos/frontend.svg);
 }
 
 .python {
-  background-image: url(/images/courses-logos/python.svg);
+  background-image: url(./images/courses-logos/python.svg);
 }
 
 .manual {
-  background-image: url(/images/courses-logos/qa.svg);
+  background-image: url(./images/courses-logos/qa.svg);
 }
 
 .full-stack {
-  background-image: url(/images/courses-logos/full-stack.svg);
+  background-image: url(./images/courses-logos/full-stack.svg);
 }
 
 .c-net {
-  background-image: url(/images/courses-logos/c_sharp.svg);
+  background-image: url(./images/courses-logos/c_sharp.svg);
 }
 
 .java {
-  background-image: url(/images/courses-logos/java.svg);
+  background-image: url(./images/courses-logos/java.svg);
 }
 
 /* Main */
@@ -165,19 +165,19 @@
 }
 
 .find {
-  background-image: url(/images/advantages-icons/find.svg);
+  background-image: url(./images/advantages-icons/find.svg);
 }
 
 .salary {
-  background-image: url(/images/advantages-icons/salary.svg);
+  background-image: url(./images/advantages-icons/salary.svg);
 }
 
 .world {
-  background-image: url(/images/advantages-icons/world.svg);
+  background-image: url(./images/advantages-icons/world.svg);
 }
 
 .home {
-  background-image: url(/images/advantages-icons/home.svg);
+  background-image: url(./images/advantages-icons/home.svg);
 }
 
 .section-title {
@@ -227,42 +227,42 @@
 }
 
 .frontend-spec {
-  background-image: url(/images/courses-logos/frontend.svg);
+  background-image: url(./images/courses-logos/frontend.svg);
   background-size: 60px 60px;
   background-position-x: 286px;
   background-position-y: 24px;
 }
 
 .c_net {
-  background-image: url(/images/courses-logos/c_sharp.svg);
+  background-image: url(./images/courses-logos/c_sharp.svg);
   background-size: 64px 64px;
   background-position-x: 286px;
   background-position-y: 24px;
 }
 
 .java-spec {
-  background-image: url(/images/courses-logos/java.svg);
+  background-image: url(./images/courses-logos/java.svg);
   background-size: 54px 70px;
   background-position-x: 286px;
   background-position-y: 10px;
 }
 
 .python-spec {
-  background-image: url(/images/courses-logos/python.svg);
+  background-image: url(./images/courses-logos/python.svg);
   background-size: 60px 60px;
   background-position-x: 286px;
   background-position-y: 24px;
 }
 
 .full-stack-spec {
-  background-image: url(/images/courses-logos/node.svg);
+  background-image: url(./images/courses-logos/node.svg);
   background-size: 81px 46px;
   background-position-x: 276px;
   background-position-y: 34px;
 }
 
 .qa-manual {
-  background-image: url(/images/courses-logos/qa.svg);
+  background-image: url(./images/courses-logos/qa.svg);
   background-size: 56px 56px;
   background-position-x: 290px;
   background-position-y: 24px;
@@ -315,7 +315,7 @@
 
 /* consult */
 .main-consult {
-  background-image: url(/images/black-friday-strips/yellow_strip.png), url(/images/black-friday-strips/red-strip.png), url(/images/advisor.png);
+  background-image: url(./images/black-friday-strips/yellow_strip.png), url(./images/black-friday-strips/red-strip.png), url(./images/advisor.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom, bottom, 67% 23%;
 }
@@ -394,7 +394,7 @@ select {
   background-repeat: no-repeat;
   background-position: 10px center, calc(100% - 104px) center;
   background-size: 30px auto, 10px;
-  background-image: url(/images/flags/flag-ukraine.svg), url(/images/arrow-select.png);
+  background-image: url(./images/flags/flag-ukraine.svg), url(./images/arrow-select.png);
 }
 
 /* Style input for the phone number */
