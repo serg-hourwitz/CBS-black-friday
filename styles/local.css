@@ -648,6 +648,10 @@ select {
     font-size: var(--fz-big);
   }
 
+  .header-info-link {
+    width: 100%;
+  }
+
   .header-info-link:nth-of-type(6) {
     display: none;
   }
