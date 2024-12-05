@@ -635,6 +635,8 @@ select {
 
 @media (max-width: 576px) {
   .header-nav-list {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 30px;
   }
 
@@ -691,6 +693,36 @@ select {
 
   .section-title {
     font-size: 30px;
+  }
+}
+
+
+
+@media (max-width: 360px) {
+  .frontend-spec {
+    background-position-x: 265px;
+    background-position-y: 23px;
+  }
+
+  .c_net {
+    background-position-x: 267px;
+  }
+
+  .java-spec {
+    background-position-x: 266px;
+  }
+
+  .python-spec {
+    background-position-x: 261px;
+  }
+
+  .full-stack-spec {
+    background-position-x: 236px;
+    background-position-y: 71px
+  }
+
+  .qa-manual {
+    background-position-x: 280px;
   }
 }
 
