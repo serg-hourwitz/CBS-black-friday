@@ -32,7 +32,9 @@
 }
 
 .header-nav-link:hover {
+  text-shadow: 0 0 10px;
   color: var(--c-yellow);
+  transform: translateY(0);
 }
 
 .header-info {
