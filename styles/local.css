@@ -722,7 +722,8 @@ select {
   }
 
   .qa-manual {
-    background-position-x: 280px;
+    background-position-y: 80px;
+    background-position-x: 263px;
   }
 }
 
