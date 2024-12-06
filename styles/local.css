@@ -560,6 +560,7 @@ select {
   bottom: 40px;
   left: 90%;
   transition: ease-in-out .3s;
+  opacity: 0;
 }
 
 /* Responsive */
